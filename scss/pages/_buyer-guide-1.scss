@@ -1,0 +1,265 @@
+.hero-sec {
+    padding: 32px 0;
+    overflow: hidden;
+    background-color: var(--blue-light);
+
+
+    .content-warpper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        .main-title {
+            font-size: 64px;
+        }
+
+        .lead {
+            margin-bottom: 10px;
+        }
+    }
+
+    .video-player-wrapper {
+        position: relative;
+
+        .video-player {
+            position: relative;
+            z-index: 1;
+
+            .play-btn {
+                position: absolute;
+                width: 85px;
+                height: 85px;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                animation: 1.5s pulse infinite;
+                box-shadow: 0 0 0 14px transparent;
+                transition: .3s;
+                z-index: 1;
+
+                img {
+                    transition: .3s;
+                }
+
+                &:hover {
+                    animation: unset;
+                    background-color: var(--primary);
+
+                    img {
+                        filter: brightness(.4);
+                    }
+                }
+
+                @keyframes pulse {
+                    from {
+                        box-shadow: 0 0 0 0 white;
+                    }
+                }
+            }
+
+            video {
+                border-radius: 16px;
+                width: 100%;
+            }
+        }
+
+
+        .arrow-obj {
+            position: absolute;
+            top: calc(100% - 20px);
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+    }
+}
+.why-us-sec {
+    .icons-list {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 161px;
+            height: 718px;
+            background-image: url('./../../assets/img/why-us-stroke.webp');
+            left: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+            background-size: contain;
+
+        }
+        .list-items {
+            display: flex;
+            padding: 10px;
+            border-radius: 60px;
+            background-color: var(--blue-light);
+            gap: 16px;
+            max-width: 468px;
+            &:nth-child(2) {
+                transform: translateX(100px);
+            }
+            &:nth-child(3) {
+                transform: translateX(170px);
+            }
+            &:nth-child(4) {
+                transform: translateX(100px);
+            }
+        }
+    }
+}
+
+@media (max-width: 1340px) {
+    .why-us-sec {
+        .icons-list {
+            gap: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 161px;
+                height: 718px;
+                background-image: url('./../../assets/img/why-us-stroke.webp');
+                left: 40px;
+                top: 50%;
+            }
+            .list-items {
+                &:nth-child(2) {
+                    transform: translateX(60px);
+                }
+                &:nth-child(3) {
+                    transform: translateX(100px);
+                }
+                &:nth-child(4) {
+                    transform: translateX(60px);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1240px) {
+    .why-us-sec {
+        .icons-list {
+            gap: 20px;
+            &::before {
+                height: 600px;
+                width: 160px;
+            }
+            .list-items {
+                &:nth-child(2) {
+                    transform: translateX(40px);
+                }
+                &:nth-child(3) {
+                    transform: translateX(60px);
+                }
+                &:nth-child(4) {
+                    transform: translateX(40px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-sec {
+        padding: 60px 0;
+
+        .content-warpper {
+            padding: 0;
+
+            .main-title {
+                font-size: 46px;
+            }
+        }
+    }
+
+    .half-sec {
+        &.content-right {
+            .content-wrapper {
+                padding-left: 0;
+            }
+        }
+
+        &.content-left {
+            .content-wrapper {
+                padding-right: 0;
+            }
+        }
+
+        .img-wrapper {
+            max-width: fit-content;
+            margin: auto;
+
+            .sec-img {
+                max-width: 340px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .line-obj {
+                svg {
+                    width: 220px;
+
+                }
+            }
+        }
+    }
+
+    .why-us-sec {
+        .icons-list {
+            gap: 20px;
+            &::before {
+                height: calc(100% - 40px);
+                width: 12px;
+                background-color: var(--gray-light);
+                background-image: unset;
+                left: 52px;
+            }
+            .list-items {
+                transform: unset !important;
+                max-width: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-sec {
+        padding: 45px 0;
+
+        .content-warpper {
+            .main-title {
+                font-size: 36px;
+            }
+        }
+
+    }
+
+    .default-sec {
+        .obj{
+            opacity: .5;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .why-us-sec {
+        .icons-list {
+            &::before {
+                left: 46px;
+            }
+            .list-items {
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}
