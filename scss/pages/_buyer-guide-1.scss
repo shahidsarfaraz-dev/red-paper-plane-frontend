@@ -1,17 +1,76 @@
+.feature-sec {
+    .main-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .icon-box {
+            padding-right: 20px;
+            position: relative;
+            flex: 1;
+
+            &:last-child {
+                padding-left: 120px;
+                &::before {
+                    display: none;
+                }
+            }
+            
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background-color: var(--gray-light);
+                width: 1px;
+                height: 60%;
+            }
+           li{
+            display: flex;
+            gap: 16px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: var(--gray-light);
+                width: 60%;
+                height: 1px;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                &::before{
+                    display: none;
+                }
+            }
+           } 
+        }
+    }
+}
 .faq-sec{
     .accordion {
         .accordion-item {
             background-color: var(--blue-light);
             border-radius: 16px;
+            margin-bottom: 16px;
+            border: 1px solid var(--blue-light);
+            &:last-child {
+                margin-bottom: 0;
+            }
 
             &:last-child {
                 margin-bottom: 0;
             }
 
             &.active {
+                background-color: #D9EFFF;
+                border: 1px solid var(--blue);
                 .accordion-header {
-                    color: var(--green);
-                    background-color: white;
 
                     .icon {
                         .minus {
@@ -29,39 +88,82 @@
                 padding: 24px;
                 position: relative;
                 cursor: pointer;
-
-                .icon {
-                    position: absolute;
-                    top: calc(50% - 2px);
-                    right: 30px;
-                    transform: translate(0, -50%);
-                    transition: .4s;
-
-                    .minus {
-                        display: none;
-                    }
-
-                    &:hover {
-                        transform: translate(0, -50%) scale(1.2);
-                    }
-
-                }
+                font-size: clamp(20px, 2vw, 22px);
+                
             }
 
             .accordion-content {
                 display: none;
-                padding: 20px 30px 0;
-
-                p {
-                    color: white;
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
+                padding: 24px;
+                padding-top: 0;
 
                 &.show {
                     display: block;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1350px) {
+    .feature-sec {
+        .main-wrapper {
+            .icon-box {
+                &:last-child {
+                    padding-left: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    .feature-sec {
+        .main-wrapper {
+            
+            .icon-box {
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+                h4{
+                    font-size: 20px;
+                }          
+                &::before{
+                    display: none;
+                }
+                &:last-child {
+                    padding-left: 0;
+                    margin-bottom: 0;
+                }
+                li{
+                    width: fit-content;
+                    position: relative;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                    &::before{
+                        left: 56px;
+                        transform: unset;
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    .feature-sec {
+        .main-wrapper {
+            flex-direction: column;
+            .icon-box {
+                &:first-child{
+                    li{
+                        margin-bottom: 20px;
+                        padding-bottom: 20px;
+                        &::before {
+                            display: block;
+                        }
+                    }
                 }
             }
         }

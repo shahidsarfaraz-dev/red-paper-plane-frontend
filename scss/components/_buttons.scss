@@ -49,11 +49,19 @@
   position: relative;
 }
 
+
 .btn-outline {
   color: var(--blue);
   border: 1px solid var(--blue);
   font-weight: 400;
 
+  &.btn-red{
+    color: var(--primary);
+    border-color: var(--primary);
+    &::before{
+      background-image: url('./../../assets/img/icons/red-arrow.svg');
+    }
+  }
 
   &::before {
     background-image: url('./../../assets/img/icons/outline-btn-arrow.svg');
