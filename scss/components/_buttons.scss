@@ -50,17 +50,13 @@
 }
 
 .btn-outline {
-  color: var(--gray);
-  border: 1px solid var(--gray);
-  &:hover {
-    color: white;
-    background-color: var(--green-dark);
-    &::before {
-      filter: unset;
-    }
-  }
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  font-weight: 400;
+
+
   &::before {
-    filter: invert(1);
+    background-image: url('./../../assets/img/icons/outline-btn-arrow.svg');
   }
 }
 .btn-primary-underline{

@@ -104,6 +104,9 @@
 .fs-20 {
   font-size: 20px;
 }
+.fs-22 {
+  font-size: 22px;
+}
 .fw-normal {
   font-weight: normal;
 }
@@ -120,12 +123,14 @@
 }
 
 .card {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  padding: 40px 28px;
-  &.shadow {
-    box-shadow: 0px 4px 60px rgba(0, 0, 0, .08);
-  }
+  padding: 38px 32px;
+  border: 1px solid var(--gray-light);
+}
+.card-title{
+  color: #050505;
+  font-size: 22px;
 }
 
 .default-sec {
@@ -292,6 +297,20 @@
   }
   .flex-lg-row {
     flex-direction: row;
+  }
+  .order-lg-1{
+    order: 1;
+  }
+  .order-lg-2{
+    order: 2;
+  }
+  .horizontal-lg-right{
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
 }
 @media (max-width: 767px) {
