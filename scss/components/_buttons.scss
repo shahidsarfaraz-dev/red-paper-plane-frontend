@@ -40,6 +40,9 @@
     padding: 12px 18px;
     font-size: 14px;
     transition: .3s;
+    &::before {
+      display: none;
+    }
   }
 }
 
