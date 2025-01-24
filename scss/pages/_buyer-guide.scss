@@ -655,9 +655,26 @@
             }
         }
     }
+    .brands-sec {
+        .brand-slider {
+            .slick-slide {
+                width: 160px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
+    .brands-sec {
+        .brand-slider {
+            .slick-slide {
+                width: 140px;
+            }
+        }
+    }
     .why-us-sec {
         .icons-list {
             &::before {
