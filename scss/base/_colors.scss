@@ -1,0 +1,36 @@
+.text-white {
+  color: white !important;
+}
+
+.bg-white {
+  background: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.bg-black {
+  background: black;
+}
+
+// Primary Colors
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-blue-light {
+  background-color: var(--blue-light) !important;
+}
+
+// gray
+.text-gray {
+  color: var(--gray);
+}
+.bg-gray {
+  background-color: var(--gray);
+}

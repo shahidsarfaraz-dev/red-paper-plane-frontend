@@ -1,0 +1,76 @@
+.btn {
+  font-size: 18px;
+  padding: 12px 46px 12px 16px;
+  align-items: center;
+  gap: 5px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 30px;
+  transition: .3s;
+  font-weight: 700;
+  position: relative;
+  max-width: fit-content;
+  &:hover {
+    filter: brightness(.9);
+    &::before {
+      transform: translate(6px, -50%);
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    top: 50%;
+    right: 20px;
+    transform: translate(0%, -50%);
+    transition: .3s;
+    background-image: url('./../../assets/img/icons/btn-arrow.svg');
+  }
+  &.no-arrow {
+    &::before{
+      display: none;
+    }
+  }
+  &.btn-sm {
+    padding: 12px 18px;
+    font-size: 14px;
+    transition: .3s;
+  }
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--primary);
+  position: relative;
+}
+
+.btn-outline {
+  color: var(--gray);
+  border: 1px solid var(--gray);
+  &:hover {
+    color: white;
+    background-color: var(--green-dark);
+    &::before {
+      filter: unset;
+    }
+  }
+  &::before {
+    filter: invert(1);
+  }
+}
+.btn-primary-underline{
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+@media (max-width: 576px) {
+  .btn {
+    font-size: 16px;
+    padding: 10px 46px 10px 14px;
+  }
+}
