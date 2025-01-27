@@ -113,6 +113,12 @@
             }
         }
 
+        .title {
+            font-size: clamp(20px, 5vw, 28px);
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
         .front-face {
             position: absolute;
             width: 100%;
@@ -124,11 +130,7 @@
             background-size: cover;
             padding: 45px 60px;
 
-            .front-face-title {
-                font-size: clamp(20px, 5vw, 28px);
-                font-weight: bold;
-                margin-bottom: 6px;
-            }
+            
         }
 
         .back-face {
