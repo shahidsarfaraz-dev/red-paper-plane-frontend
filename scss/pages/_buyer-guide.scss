@@ -208,16 +208,15 @@
 
 .media-sec {
     .media-slider {
-        width: calc(calc(100vw - 10px) - calc(calc(100vw - 100%) / 2));
+        // width: calc(calc(100vw - 10px) - calc(calc(100vw - 100%) / 2));
 
-        .slick-slide {
-            max-width: 483px;
-            width: calc(100vw - 40px);
-        }
+        // .slick-slide {
+        //     max-width: 483px;
+        //     width: calc(100vw - 40px);
+        // }
 
         .slider-item {
-            padding: 0 10px;
-
+            // padding: 0 10px;
             .img,
             .video {
                 border-radius: 12px;
@@ -256,15 +255,15 @@
 }
 
 .success-stories-sec {
-    .success-slider {
-        width: calc(calc(100vw - 10px) - calc(calc(100vw - 100%) / 2));
+    // .success-slider {
+    //     width: calc(calc(100vw - 10px) - calc(calc(100vw - 100%) / 2));
 
-        .slick-slide {
-            max-width: 418px;
-            width: calc(100vw - 40px);
-            padding: 0 10px;
-        }
-    }
+    //     .slick-slide {
+    //         max-width: 418px;
+    //         width: calc(100vw - 40px);
+    //         padding: 0 10px;
+    //     }
+    // }
 
     .card {
         .img-wrapper {
