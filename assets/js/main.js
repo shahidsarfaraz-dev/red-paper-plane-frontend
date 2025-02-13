@@ -19,14 +19,14 @@ jQuery(document).ready(function ($) {
     });
   });
 
-  // $(".media-slider").slick({
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   dots: false,
-  //   variableWidth: true,
-  // });
+  $(".media-slider").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    variableWidth: true,
+  });
   $(".brand-slider").slick({
     autoplay: true,
     infinite: true,

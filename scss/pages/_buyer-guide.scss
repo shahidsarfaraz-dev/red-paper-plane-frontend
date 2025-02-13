@@ -207,16 +207,17 @@
 }
 
 .media-sec {
-    .media-slider {
-        // width: calc(calc(100vw - 10px) - calc(calc(100vw - 100%) / 2));
+    .media-slider,
+    .media-slider-1 {
+        width: calc(calc(100vw - 10px) - calc(calc(100vw - 100%) / 2));
 
-        // .slick-slide {
-        //     max-width: 483px;
-        //     width: calc(100vw - 40px);
-        // }
+        .slick-slide {
+            max-width: 483px;
+            width: calc(100vw - 40px);
+        }
 
         .slider-item {
-            // padding: 0 10px;
+            padding: 0 10px;
             .img,
             .video {
                 border-radius: 12px;
