@@ -1,0 +1,105 @@
+.hero-sec {
+    padding: 32px 0;
+    overflow: hidden;
+    background-color: var(--blue-light);
+
+
+    .content-warpper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        .main-title {
+            font-size: clamp(40px, 5vw, 60px);
+        }
+
+        .lead {
+            margin-bottom: 10px;
+        }
+    }
+    .sec-img {
+        border-radius: 20px;
+    }
+
+}
+.gallery-sec {
+    .gallery-card {
+        border: 1px solid #EBEBEB;
+        border-radius: 7px;
+        overflow: hidden;
+        position: relative;
+        display: block;
+        .content-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            padding: 10px 12px;
+            .card-title {
+                font-size: clamp(16px, 2vw, 24px);
+                color: #464646;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            .card-text {
+                color: var(--gray);
+            }
+        }
+    }
+    .sidebar {
+        padding: 33px 16px;
+        position: sticky;
+        top: 40px;
+        .accordion-header {
+            .icon {
+                display: none;
+            }       
+        }
+        .title {
+            font-size: 20px;
+        }
+        ul {
+            li {
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .gallery-sec {
+        .sidebar {
+            padding: 12px 16px;
+            .title {
+                font-size: 18px;
+            }
+            .accordion-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &.active {
+                    .icon {
+                        transform: rotate(180deg);
+                    }
+                }
+                .icon {
+                    display: block;
+                    transition: .3s;
+                }
+            }
+            .accordion-content {
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
+        }
+    }
+}

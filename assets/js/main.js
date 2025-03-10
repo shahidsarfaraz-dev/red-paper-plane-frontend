@@ -37,5 +37,10 @@ jQuery(document).ready(function ($) {
     variableWidth: true,
     adaptiveHeight: true
   });
+
+  $('.sidebar .accordion-header').on('click', function () {
+    $(this).toggleClass('active');
+    $('.sidebar .accordion-content').toggleClass('active');
+  });
 });
 
