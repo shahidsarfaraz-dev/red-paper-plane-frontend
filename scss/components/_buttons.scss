@@ -37,6 +37,9 @@
       display: none;
     }
   }
+  &.wide-padding {
+    padding: 12px 40px;
+  }
   &.btn-sm {
     padding: 12px 18px;
     font-size: 14px;
@@ -67,6 +70,7 @@
     border-color: var(--primary);
     &:hover {
       background-color: var(--primary);
+      color: white;
       &::before{
         filter: invert(1) brightness(2);
       }
@@ -89,5 +93,8 @@
   .btn {
     font-size: 16px;
     padding: 10px 46px 10px 14px;
+    &.wide-padding {
+      padding: 10px 30px;
+    }
   }
 }
