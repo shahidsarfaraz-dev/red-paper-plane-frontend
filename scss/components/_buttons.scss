@@ -72,7 +72,7 @@
       background-color: var(--primary);
       color: white;
       &::before{
-        filter: invert(1) brightness(2);
+        filter: invert(1) brightness(999);
       }
     }
     &::before{
