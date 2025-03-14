@@ -26,7 +26,6 @@ jQuery(document).ready(function ($) {
     arrows: false,
     dots: false,
     variableWidth: true,
-    autoplay: true,
   });
   $(".brand-slider").slick({
     autoplay: true,

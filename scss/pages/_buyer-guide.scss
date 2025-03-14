@@ -224,7 +224,8 @@
         .slider-item {
             padding: 10px;
             .img,
-            .video {
+            .video,
+            >div {
                 border-radius: 12px;
                 object-fit: cover;
                 height: 300px;
