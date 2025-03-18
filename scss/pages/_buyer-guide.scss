@@ -496,13 +496,28 @@
                     }
                 }
             }
+            &:hover {
+                background-color: #D9EFFF;
+            }
 
             .accordion-header {
-                padding: 24px;
+                padding: 24px 46px 24px 24px;
                 position: relative;
                 cursor: pointer;
-                font-size: clamp(20px, 2vw, 22px);
-                
+                font-size: 22px;
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    right: 30px;
+                    transform: translate(0, -50%);
+                    transition: .4s;
+                    font-size: 30px;
+
+                    .minus {
+                        display: none;
+                    }
+
+                }
             }
 
             .accordion-content {
@@ -660,6 +675,8 @@
         padding: 45px 0;
 
         .content-warpper {
+            align-items: center;
+            text-align: center;
             .main-title {
                 font-size: 36px;
             }
@@ -742,6 +759,23 @@
                 img {
                     width: 80px;
                     height: 80px;
+                }
+            }
+        }
+    }
+    .faq-sec{
+        .accordion {
+            .accordion-item {
+                .accordion-header {
+                    padding: 24px 36px 24px 24px;
+                    font-size: 18px;
+                    .icon {
+                        right: 20px;
+                    }
+                }
+    
+                .accordion-content {
+                    padding: 0 20px 20px;
                 }
             }
         }

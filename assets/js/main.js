@@ -26,6 +26,7 @@ jQuery(document).ready(function ($) {
     arrows: true,
     dots: false,
     variableWidth: true,
+    touchThreshold: 20,
     responsive: [
       {
         breakpoint: 768,
