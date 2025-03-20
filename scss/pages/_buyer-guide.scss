@@ -245,12 +245,15 @@
             width: 36px;
             height: 36px;
             z-index: 9;
+            left: unset;
+            top: -80px;
+            right: 20px;
             &::before {
                 color: black;
                 font-size: 24px;
             }
-            &.slick-next {
-                right: 20px;
+            &.slick-prev {
+                right: 80px;
             }
         }
         .slick-dots {
@@ -632,6 +635,14 @@
             .list-items {
                 transform: unset !important;
                 max-width: unset;
+            }
+        }
+    }
+    .media-sec {
+        .media-slider,
+        .media-slider-1 {
+            .slick-arrow {
+                top: -60px;
             }
         }
     }
