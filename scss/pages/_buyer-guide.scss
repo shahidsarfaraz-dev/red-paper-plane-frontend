@@ -190,11 +190,11 @@
 
         .list-items {
             display: flex;
-            padding: 10px;
+            padding: 10px 20px 10px 10px;
             border-radius: 60px;
             background-color: var(--blue-light);
             gap: 16px;
-            max-width: 468px;
+            max-width: 490px;
 
             &:nth-child(2) {
                 transform: translateX(100px);
@@ -227,7 +227,8 @@
             .video,
             >div {
                 border-radius: 12px;
-                object-fit: cover;
+                object-fit: contain;
+                object-position: center;
                 height: 300px;
                 box-shadow: 0px 0px 10px rgba(#000, .1);
             }
@@ -245,15 +246,14 @@
             width: 36px;
             height: 36px;
             z-index: 9;
-            left: unset;
-            top: -80px;
-            right: 20px;
+            top: 40%;
+            transform: translateY(-50%);
             &::before {
                 color: black;
                 font-size: 24px;
             }
-            &.slick-prev {
-                right: 80px;
+            &.slick-next {
+                right: 20px;
             }
         }
         .slick-dots {
