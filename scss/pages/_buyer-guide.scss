@@ -108,6 +108,7 @@
         position: relative;
         overflow: hidden;
         transition: .4s;
+        height: 100%;
 
         &:hover {
             transform: scale(1.04);
@@ -134,10 +135,8 @@
             flex-direction: column;
             background-size: cover;
             padding: 45px 60px;
-
-            
+            height: 100%;
         }
-
         .back-face {
             transform: translateY(100%);
             display: block;
@@ -149,6 +148,7 @@
             align-items: center;
             flex-direction: column;
             transition: .4s;
+            height: 100%;
 
             * {
                 position: relative;
